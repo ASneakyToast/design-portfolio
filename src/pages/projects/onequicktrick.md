@@ -3,7 +3,7 @@ layout: "../../layouts/ProjectPost.astro"
 title: "onequicktrick.com"
 description: "A personal website for the artist Joseph Blake."
 pubDate: "Jul 08 2022"
-heroImage: "/placeholder-hero.jpg"
+heroImage: "/onequicktrick-gif.gif"
 cta: "https://www.onequicktrick.com"
 ---
 
