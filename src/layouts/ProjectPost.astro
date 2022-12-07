@@ -28,13 +28,13 @@ const {
 	<body>
 		<Header />
 		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-        <section class="header">
-          <h1 class="title">{title}</h1>
-          <p>{ description }</p>
-        </section>
-				<hr />
+      {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+      <section class="header">
+        <h1 class="title">{title}</h1>
+        <p>{ description }</p>
+      </section>
+      <hr />
+			<article class="content">
 				<slot />
         { cta && <a href={ cta } target="_blank" class="cta"><button>Open Case Study</button></a> }
         </ul>
@@ -47,13 +47,30 @@ const {
 
 
 <style lang="scss">
-main > article {
+main {
+  & > img {
+    max-height: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: auto;
+    border-radius: 4px;
+    border: 2px solid #edeeee;
+  }
+
   display: grid;
-  grid-auto-columns: minmax( 0, 1fr );
   gap: 32px;
 }
 
+.content {
+  display: grid;
+  grid-auto-columns: minmax( 0, 1fr );
+  gap: 24px;
+}
+
 .header {
+  display: grid;
+  gap: 8px;
+
   & > h1 {
     font-size: 32px;
   }
