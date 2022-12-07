@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 
 export interface Props {
 	content: {
-		title: string;
-		description: string;
+		title?: string;
+		description?: string;
 		pubDate?: string;
 		updatedDate?: string;
 		heroImage?: string;
@@ -47,7 +47,7 @@ const {
 						</div>
 					)
 				}
-				<hr />
+				{title && <hr />}
 				<slot />
 			</article>
 		</main>
