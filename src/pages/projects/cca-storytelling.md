@@ -3,7 +3,7 @@ layout: "../../layouts/ProjectPost.astro"
 title: "Storytelling at CCA"
 description: "Using no-code applications to create a visually dynamic web-based experience."
 pubDate: "Jul 08 2022"
-heroImage: "/back_to_school-gif.gif"
+heroImage: "/blindthrowing-gif.gif"
 cta: "https://www.figma.com/file/tU1kgeDiZhNMrry8gTkWql/Storytelling-%40-CCA?t=46r6uaaIh9of0dlk-1"
 ---
 
