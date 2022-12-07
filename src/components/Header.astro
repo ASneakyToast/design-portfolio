@@ -1,0 +1,47 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../config';
+---
+
+<header>
+  <section id="logo">
+    <h2>Joel Lithgow's <span>really impromptu</span></h2>
+    <h3>UX Portfolio</h3>
+  </section>
+	<nav>
+		<HeaderLink href="/">Home</HeaderLink>
+		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="/contact">Contact</HeaderLink>
+	</nav>
+  <hr></hr>
+</header>
+
+<style lang="scss">
+header {
+  margin: 0em 0 2em;
+}
+
+#logo {
+  & h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+
+    & span {
+      color: gray;
+      font-weight: normal;
+    }
+  }
+
+  & h3 {
+    font-size: 36px;
+    color: #000000;
+  }
+
+  margin-bottom: 16px;
+}
+
+hr {
+  margin: 32px 0;
+}
+</style>

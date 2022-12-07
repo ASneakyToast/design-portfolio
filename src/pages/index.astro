@@ -1,0 +1,71 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>👱‍🤝🤖 Hello, BattleBots!</h1>
+			<p>
+        I quickly put together this site to showcase some of my UX Design work, because I've been doing design for the same company the last few years I haven't needed to have a portfolio until now! Below are a few projects I have worked on within the past couple years.
+      </p>
+
+			<ul class="projects">
+				<li>
+          <p><b><a href="/projects/cca-admissions">CCA Admissions Content</a></b>, <i>in-progress</i></p>
+          <p>My soon-to-be full-time job as California College of the Arts's UX Designer. I am currently over-seeing the restructuring and enhancement of the admissions content on CCA.edu.</p>
+        </li>
+				<li>
+          <p><b><a href="/projects/cca-storytelling">CCA Storytelling</a></b>, <i>2022</i></p>
+          <p>My soon-to-be full-time job as California College of the Arts's UX Designer. I am currently over-seeing the restructuring and enhancement of the admissions content on CCA.edu.</p>
+        </li>
+				<li>
+          <p><b><a href="/projects/onequicktrick">onequicktrick.com Artist Website for Joseph Blake</a></b>, <i>2022</i></p>
+          <p>Joseph Blake is an up-and-coming bay area artist, and a close friend, who needed an artist portfolio site for residencies and galleries he was applying to.</p>
+        </li>
+				<li>
+          <p><b><a href="/projects/knowledge-base">Knowledge Base for CCA's internal Portal</a></b>, <i>2020-2021</i></p>
+          <p>The Knowledge Base is an internal set of self-help resources for CCA students/staff/faculty and is intended to be a unified replacement to google docs.</p>
+        </li>
+				<li>
+          <p><b><a href="/projects/web-team-workflow">Design workflow for CCA's web-team</a></b>, <i>2019-2021</i></p>
+          <p>Over the years working with CCA's internal web-team I formalized a design workflow for handoff with the developers that they still currently use.</p>
+        </li>
+			</ul>
+
+			<p>
+        If there's any projects you'd like to learn more about just let me know and I can include more detail and we can have a further conversation about it!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+
+
+<style lang="scss">
+
+main {
+  display: grid;
+  gap: 32px; 
+}
+
+.projects {
+  display: grid;
+  width: 77%;
+  gap: 24px; 
+
+  & > li > p:first-child {
+    padding-bottom: 8px;
+  }
+}
+
+</style>
